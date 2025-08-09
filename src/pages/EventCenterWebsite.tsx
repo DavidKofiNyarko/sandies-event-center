@@ -1049,7 +1049,9 @@ const EventCenterWebsite = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <div className="mb-4">
-              <SandiesLogo size="md" className="text-primary" />
+              <div className="mb-2 bg-slate-800 ">
+                <SandiesLogo size="md" className="text-primary " />
+              </div>
             </div>
             <p className="text-background/80 mb-8">
               Creating unforgettable moments since 2020

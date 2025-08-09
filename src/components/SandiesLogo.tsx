@@ -8,8 +8,8 @@ interface SandiesLogoProps {
 }
 
 export const SandiesLogo = ({
-  size = "md",
-  imageUrl = "/lovable-uploads/d2fc01de-aeb1-4ba2-95d2-e1ee5823b228.png", // Sandie's Astoria logo
+  size = "sm",
+  imageUrl = "logo.png", // Sandie's Astoria logo
   alt = "Sandie's Astoria Event Centre Logo",
   className,
 }: SandiesLogoProps) => {
