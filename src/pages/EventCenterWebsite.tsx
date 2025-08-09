@@ -860,7 +860,7 @@ const EventCenterWebsite = () => {
                 onClick={() => setSelectedMedia(media)}
               >
                 <img
-                  src={media.type === "video" ? media.thumbnail : media.url}
+                  src={media.type === "video" ? media.url : media.url}
                   alt={media.title}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                 />
