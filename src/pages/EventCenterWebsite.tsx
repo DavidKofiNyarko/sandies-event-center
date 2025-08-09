@@ -129,14 +129,16 @@ const EventCenterWebsite = () => {
       type: "image",
       category: "weddings",
       title: "Elegant Wedding Reception",
-      url: "https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      thumbnail:
+        "https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
     },
     {
       id: 2,
       type: "image",
       category: "weddings",
       title: "Bridal Suite Setup",
-      url: "https://lh3.googleusercontent.com/pw/AP1GczMTViPyDxgt7w63j4z3kkD8uYDlk3QxK4mgW-nhe_4pSYEdexZMlfPTkGxTsAoJpaDhR0pXzyrZ1siZURa3DRoEoqmEXQP4_0O9yuwMMJwAIWS6aywq7HTtkmbWgk01m0HRcQ_Thk8mfymoho9-KWA=w702-h936-s-no-gm?authuser=0",
+      thumbnail:
+        "https://lh3.googleusercontent.com/pw/AP1GczMTViPyDxgt7w63j4z3kkD8uYDlk3QxK4mgW-nhe_4pSYEdexZMlfPTkGxTsAoJpaDhR0pXzyrZ1siZURa3DRoEoqmEXQP4_0O9yuwMMJwAIWS6aywq7HTtkmbWgk01m0HRcQ_Thk8mfymoho9-KWA=w702-h936-s-no-gm?authuser=0",
     },
     {
       id: 3,
@@ -144,21 +146,23 @@ const EventCenterWebsite = () => {
       category: "weddings",
       title: "Wedding Ceremony Highlights",
       thumbnail:
-        "https://drive.google.com/uc?export=download&id=1zOugxZtQWbJpnp-E8Bot64bPUNNqLMXq",
+        "https://www.youtube.com/shorts/kCO5ekx3rAw?feature=share/maxresdefault.jpg",
     },
     {
       id: 4,
       type: "image",
       category: "weddings",
       title: "Dance Floor Magic",
-      url: "https://lh3.googleusercontent.com/pw/AP1GczNvUGIcAlJZq8yBfiUGf0OxWqRv-ULj7oPYXBYOvUFlf3yp2WPN6h6slMESBb5Vue8LhNmlD0b0rfDqOOGXoYDyRsfgCsQ3IeTRP_k8N0zptHT8-GLxPyAFikq_NKe9FAXr2wy3iYvjg7j4lZ-VDH8=w558-h744-s-no-gm?authuser=0",
+      thumbnail:
+        "https://lh3.googleusercontent.com/pw/AP1GczNvUGIcAlJZq8yBfiUGf0OxWqRv-ULj7oPYXBYOvUFlf3yp2WPN6h6slMESBb5Vue8LhNmlD0b0rfDqOOGXoYDyRsfgCsQ3IeTRP_k8N0zptHT8-GLxPyAFikq_NKe9FAXr2wy3iYvjg7j4lZ-VDH8=w558-h744-s-no-gm?authuser=0",
     },
     {
       id: 5,
       type: "image",
       category: "corporate",
       title: "Executive Conference Setup",
-      url: "https://lh3.googleusercontent.com/pw/AP1GczORuMjArzm2ADssbQs6kwQHeUfgcvstlobNn-6crbNKXGY0uFfXVxJ01OBfMZmLR9h2KDXcd5neMKckES-UdrC6PnfJnQ6w0kOiVN6B6fcZ9jBP7vrWQpmZDPTHzdbAW2mHLyILuq7GxvNu4g4QLYc=w558-h744-s-no-gm?authuser=0",
+      thumbnail:
+        "https://lh3.googleusercontent.com/pw/AP1GczORuMjArzm2ADssbQs6kwQHeUfgcvstlobNn-6crbNKXGY0uFfXVxJ01OBfMZmLR9h2KDXcd5neMKckES-UdrC6PnfJnQ6w0kOiVN6B6fcZ9jBP7vrWQpmZDPTHzdbAW2mHLyILuq7GxvNu4g4QLYc=w558-h744-s-no-gm?authuser=0",
     },
     {
       id: 6,
@@ -237,8 +241,8 @@ const EventCenterWebsite = () => {
       id: 16,
       type: "image",
       category: "venue",
-      title: "Evening Ambiance",
-      url: "https://images.unsplash.com/photo-1478146896981-b80fe463b330?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      title: "Wedding Reception Highlights",
+      url: "https://drive.google.com/file/d/11uuHovoiqxSYLbFT07r06ngiEiqgimwT/view?usp=sharing",
     },
   ];
 
