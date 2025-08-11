@@ -130,84 +130,84 @@ const EventCenterWebsite = () => {
       type: "image",
       category: "weddings",
       title: "Elegant Wedding Reception",
-      url: "https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      url: "https://lh3.googleusercontent.com/pw/AP1GczOlIh4Hn4pRax8hX7InwD9jwblvRViwSlzHH3-E56bIZjC6RRAoFHgH7EcGOTe7P1wD94WROWJLcF7_APg2d61rEGgXGwM4DOoUhGM5GVrMSmwC36OXbHwIm1E_oWJQl8Pf2BslVXQrGgMikILRPmEb=w731-h975-s-no-gm?authuser=0",
     },
     {
       id: 2,
       type: "image",
       category: "weddings",
       title: "Bridal Suite Setup",
-      url: "https://lh3.googleusercontent.com/pw/AP1GczMTViPyDxgt7w63j4z3kkD8uYDlk3QxK4mgW-nhe_4pSYEdexZMlfPTkGxTsAoJpaDhR0pXzyrZ1siZURa3DRoEoqmEXQP4_0O9yuwMMJwAIWS6aywq7HTtkmbWgk01m0HRcQ_Thk8mfymoho9-KWA=w702-h936-s-no-gm?authuser=0",
+      url: "https://lh3.googleusercontent.com/pw/AP1GczPrWiKJxXKus7Z41Jea20QDE0aFXJI3TDXPQEjSB9o2x1-qJKVSWbGrkdR5LZ17QVeh89wRpGi0UimRKnPLLOQW721o7Bz_9j379tS5fmxJF8CVtCLms1owPvguEran3nHmdc8fd_TemUU-_chNqpw=w731-h975-s-no-gm?authuser=0",
     },
     {
       id: 3,
       type: "video",
       category: "weddings",
       title: "Wedding Ceremony Highlights",
-      url: "https://www.youtube.com/shorts/kCO5ekx3rAw?feature=share/maxresdefault.jpg",
+      url: "https://youtube.com/shorts/YK45ab7ioWI?si=RE27Y6Y8v4G0Zo7T",
     },
     {
       id: 4,
       type: "image",
       category: "weddings",
       title: "Dance Floor Magic",
-      url: "https://lh3.googleusercontent.com/pw/AP1GczNvUGIcAlJZq8yBfiUGf0OxWqRv-ULj7oPYXBYOvUFlf3yp2WPN6h6slMESBb5Vue8LhNmlD0b0rfDqOOGXoYDyRsfgCsQ3IeTRP_k8N0zptHT8-GLxPyAFikq_NKe9FAXr2wy3iYvjg7j4lZ-VDH8=w558-h744-s-no-gm?authuser=0",
+      url: "https://lh3.googleusercontent.com/pw/AP1GczOO97ByPubDlbHGgB9CJ5RLPm7ELu0QWOSV6mg0HQOGI-MKj4kp7xp86srifzcZWfO-oy3OZGwO-6nYqLl9Rvq0ASFuJzaMWshJ7eApDpxVkk9e9DfuKH9UZovlfy0aqVRFVfGrR4O4P1YR7Fgfki8=w731-h975-s-no-gm?authuser=0",
     },
     {
       id: 5,
       type: "image",
       category: "corporate",
       title: "Executive Conference Setup",
-      url: "https://lh3.googleusercontent.com/pw/AP1GczORuMjArzm2ADssbQs6kwQHeUfgcvstlobNn-6crbNKXGY0uFfXVxJ01OBfMZmLR9h2KDXcd5neMKckES-UdrC6PnfJnQ6w0kOiVN6B6fcZ9jBP7vrWQpmZDPTHzdbAW2mHLyILuq7GxvNu4g4QLYc=w558-h744-s-no-gm?authuser=0",
+      url: "https://lh3.googleusercontent.com/pw/AP1GczOZxr7KDeIL1G1DzingxJTCB2ThkNO8HrbWHPRKR5sc1XOkEMITxVIBiHs1jTjHpYcUTdatNTpVPQWEJ5TmmBsa099UzgdaqZOsAHeqCQXqVdqURAf9qNj5Kb9zVtWkLUZDBYoxBxNkXa22kEb3-1W3=w731-h975-s-no-gm?authuser=0",
     },
     {
       id: 6,
       type: "image",
-      category: "corporate",
+      category: "weddings",
       title: "Networking Cocktail Hour",
-      url: "https://images.unsplash.com/photo-1515169067868-5387ec356754?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      url: "https://lh3.googleusercontent.com/pw/AP1GczNyx5sxZc69NMsbD_WtGy65CnioUbmyu1kGW8WpW0EtdUoB2gAkMPOhwBebroiCCG3yRrZrre-WnAC7plByV6f9nloI61BLsi7vmlCUBXaUjGn1ElOq2CQgxT4MOJRiUutOhLtPHwxUmT7BjEBIO2uJ=w871-h653-s-no-gm?authuser=0",
     },
     {
       id: 7,
       type: "video",
       category: "corporate",
       title: "Product Launch Event",
-      url: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      url: "https://youtube.com/shorts/kfRnV42mLQM?si=BsEyL2dCrj8s-qgc",
     },
     {
       id: 8,
       type: "image",
       category: "parties",
       title: "Birthday Celebration Setup",
-      url: "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      url: "https://lh3.googleusercontent.com/pw/AP1GczPUdoOTs5GYCNSTRMQ1gV3i_KtUexUFsWT1ThLON480I4gPbH1vdcTAqocxPK6hLXszIkjhNWFbO1lzfHGG2bH76HeNkrgieFrbFKP4LR0aondSJKWMZU5MJAbizmFeWP7pY_zdJpc9B7WiRzsTS3DH=w731-h975-s-no-gm?authuser=0",
     },
     {
       id: 9,
       type: "image",
       category: "parties",
       title: "Intimate Anniversary Dinner",
-      url: "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      url: "https://lh3.googleusercontent.com/pw/AP1GczOaaW2UwTT1WDPVXOghbi4aNCc7nqaGxqnvzHQrKVbV3AljQIin9GTt64vkQaXQNfWclXlEw29ZBjndcBVFa9eBiuHhRJVp90x4hRvyusionInppczwpTDQSW2GgmAJEGqkv565066umTQWGZsFNZ39=w731-h975-s-no-gm?authuser=0",
     },
     {
       id: 10,
       type: "image",
-      category: "parties",
+      category: "weddings",
       title: "Memorable Anniversary Party",
-      url: "https://lh3.googleusercontent.com/pw/AP1GczPfFE3Zg9-xg-9Mw767mOn8zS5RjWqIcYAJGAqJj4XYNbwnffBFBeAnwZI_1_bElrOU8BbqX_vtOW_Zd2yQ2CHCw7qx_gP_0S5J5_7h65AN8Dh4SGnDfScCtGWUCBx63Ck8RtGO0s77NsvVlVwOzCc=w527-h936-s-no-gm?authuser=0",
+      url: "https://lh3.googleusercontent.com/pw/AP1GczP69ZzBN49kM3zmHTf_tnN7AZxBafYM57f5VtVV87tFaWkO48ufqqq19TIkGBXYMyO79u8GOWlJJtaLfLQZ7c-Pku1xy6CSrtk35A7RXpJsaK4bLdV6sWU-U1ClpfJp0HbEMyI663aebGHbVrXuP0Ie=w743-h991-s-no-gm?authuser=0",
     },
     {
       id: 11,
       type: "video",
       category: "parties",
       title: "Party Entertainment",
-      url: "https://photos.google.com/share/AF1QipPG7FueCLqbUK2MexTH1WICQ0fhVYNxDMOmPXcFXZNjH0fWQhp923qD95gQlROhnw/photo/AF1QipOrSlOW_GcYmeVAqcyn6JCqffkhk7sIW8yQjA8g?key=Yk5sTHRyQmVBaXpDVklGR3BPUnpqWVNEQ2ZKM2xR",
+      url: "https://youtube.com/shorts/NdR7T-y1vgI?si=LOYvfG8hNROZu0KK",
     },
     {
       id: 12,
       type: "image",
       category: "venue",
       title: "Main Hall Overview",
-      url: "https://images.unsplash.com/photo-1549451371-64aa98a6f153?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      url: "https://lh3.googleusercontent.com/pw/AP1GczNMWE3SIn0K1BCnVyLCSawWPL9lG9e5mwStTnzHXrrxaiwRSLoCvwdYkdrzWp6TM9bHELo2Zu5wiW0SfIdfQ5YQk6I8HkXFE_M1HJq-k3eYfHN5PvlB-UxrPsWGZmA1uQbHwssniF2STo8a2I2tXZnh=w731-h975-s-no-gm?authuser=0",
     },
     {
       id: 13,
@@ -228,14 +228,35 @@ const EventCenterWebsite = () => {
       type: "video",
       category: "venue",
       title: "Virtual Venue Tour",
-      url: "https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      url: "https://youtube.com/shorts/yM-crfxZYME?feature=share",
     },
     {
       id: 16,
-      type: "image",
+      type: "video",
       category: "venue",
       title: "Wedding Reception Highlights",
-      url: "https://drive.google.com/file/d/11uuHovoiqxSYLbFT07r06ngiEiqgimwT/view?usp=sharing",
+      url: "https://youtube.com/shorts/rNbAs-mRvZo?si=4bgq3uWCYAWZb8ne",
+    },
+    {
+      id: 17,
+      type: "video",
+      category: "venue",
+      title: "Wedding",
+      url: "https://youtube.com/shorts/h5beRudjowA?feature=share",
+    },
+    {
+      id: 18,
+      type: "video",
+      category: "venue",
+      title: "Grand Ball Room, Ground  ",
+      url: "https://youtube.com/shorts/rzHc6zqnxBk?feature=share",
+    },
+    {
+      id: 19,
+      type: "video",
+      category: "venue",
+      title: "Top Floor",
+      url: "https://youtube.com/shorts/TivKBFWHl2c?feature=share",
     },
   ];
 
@@ -391,9 +412,11 @@ const EventCenterWebsite = () => {
       <nav className="fixed top-0 w-full bg-background/95 backdrop-blur-md shadow-elegant z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
-            <div className="flex items-center mt-4">
-              <SandiesLogo size="md" className="w-[229px]" />
-            </div>
+            <a href="/">
+              <div className="flex items-center mt-4">
+                <SandiesLogo size="md" className="w-[229px]" />
+              </div>
+            </a>
 
             {/* Desktop Menu */}
             <div className="hidden md:flex items-center space-x-8">
@@ -859,11 +882,73 @@ const EventCenterWebsite = () => {
                 className="group relative aspect-square bg-muted rounded-2xl overflow-hidden cursor-pointer hover:shadow-glow transition-all duration-300"
                 onClick={() => setSelectedMedia(media)}
               >
-                <img
-                  src={media.type === "video" ? media.url : media.url}
-                  alt={media.title}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                />
+                {media.type === "video" ? (
+                  (() => {
+                    // Prefer explicit thumbnailUrl if present
+                    if (media.thumbnailUrl) {
+                      return (
+                        <img
+                          src={media.thumbnailUrl}
+                          alt={media.title}
+                          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                        />
+                      );
+                    }
+                    // YouTube thumbnail
+                    const videoUrl = media.videoUrl || media.url;
+                    if (
+                      videoUrl &&
+                      (videoUrl.includes("youtube.com") ||
+                        videoUrl.includes("youtu.be"))
+                    ) {
+                      let videoId = null;
+                      if (videoUrl.includes("/watch?v=")) {
+                        videoId = videoUrl.split("/watch?v=")[1].split("&")[0];
+                      } else if (videoUrl.includes("/shorts/")) {
+                        videoId = videoUrl.split("/shorts/")[1].split("?")[0];
+                      } else if (videoUrl.includes("youtu.be/")) {
+                        videoId = videoUrl.split("youtu.be/")[1].split("?")[0];
+                      }
+                      if (videoId) {
+                        return (
+                          <img
+                            src={`https://img.youtube.com/vi/${videoId}/hqdefault.jpg`}
+                            alt={media.title}
+                            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                          />
+                        );
+                      }
+                    }
+                    // Direct video file: show <video> preview
+                    if (
+                      videoUrl &&
+                      /\.(mp4|webm|ogg|mov|m4v)(\?.*)?$/i.test(videoUrl)
+                    ) {
+                      return (
+                        <video
+                          src={videoUrl}
+                          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                          muted
+                          playsInline
+                          preload="metadata"
+                          poster={media.poster || undefined}
+                        />
+                      );
+                    }
+                    // Fallback: show a dark background with play icon
+                    return (
+                      <div className="w-full h-full bg-black flex items-center justify-center">
+                        <Play className="h-12 w-12 text-primary" />
+                      </div>
+                    );
+                  })()
+                ) : (
+                  <img
+                    src={media.url}
+                    alt={media.title}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                  />
+                )}
                 {media.type === "video" && (
                   <div className="absolute inset-0 flex items-center justify-center">
                     <div className="w-16 h-16 bg-card/90 rounded-full flex items-center justify-center shadow-elegant">
@@ -967,7 +1052,7 @@ const EventCenterWebsite = () => {
                   <div>
                     <p className="font-semibold">Location</p>
                     <p className="text-secondary-foreground/80">
-                      123 Event Plaza, City Center
+                      Kutunse satellite, behind DVLA
                     </p>
                   </div>
                 </div>
@@ -978,7 +1063,7 @@ const EventCenterWebsite = () => {
                   <div>
                     <p className="font-semibold">Phone</p>
                     <p className="text-secondary-foreground/80">
-                      +1 (555) 123-4567
+                      +233-206273120 / +233-240468404
                     </p>
                   </div>
                 </div>
@@ -989,7 +1074,7 @@ const EventCenterWebsite = () => {
                   <div>
                     <p className="font-semibold">Email</p>
                     <p className="text-secondary-foreground/80">
-                      info@sandiseventcenter.com
+                      sandiesastoria@gmail.com
                     </p>
                   </div>
                 </div>
@@ -1000,7 +1085,7 @@ const EventCenterWebsite = () => {
                   <div>
                     <p className="font-semibold">Hours</p>
                     <p className="text-secondary-foreground/80">
-                      Mon-Sun: 9AM - 11PM
+                      Mon-Sun: 9AM - 5PM
                     </p>
                   </div>
                 </div>
@@ -1045,13 +1130,15 @@ const EventCenterWebsite = () => {
       </section>
 
       {/* Footer */}
-      <section className="bg-foreground text-background py-12">
+      <section className="bg-foreground   bg-slate-800 text-background py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <div className="mb-4">
-              <div className="mb-2 bg-slate-800 ">
-                <SandiesLogo size="md" className="text-primary " />
-              </div>
+              <a href="/">
+                <div className="mb-2 bg-slate-800 ">
+                  <SandiesLogo size="md" className="text-primary " />
+                </div>
+              </a>
             </div>
             <p className="text-background/80 mb-8">
               Creating unforgettable moments since 2020
@@ -1165,11 +1252,76 @@ const EventCenterWebsite = () => {
             <div className="bg-card rounded-2xl overflow-hidden">
               <div className="aspect-video">
                 {selectedMedia.type === "video" ? (
-                  <div className="w-full h-full bg-secondary flex items-center justify-center">
-                    <div className="text-center text-secondary-foreground">
-                      <Play className="h-16 w-16 mx-auto mb-4" />
-                      <p className="text-lg">Video: {selectedMedia.title}</p>
-                    </div>
+                  <div className="w-full h-full flex items-center justify-center bg-black">
+                    {(() => {
+                      const videoUrl =
+                        selectedMedia.videoUrl || selectedMedia.url;
+                      const isYouTube =
+                        videoUrl &&
+                        (videoUrl.includes("youtube.com") ||
+                          videoUrl.includes("youtu.be"));
+                      const isDirectVideo =
+                        videoUrl &&
+                        /\.(mp4|webm|ogg|mov|m4v)(\?.*)?$/i.test(videoUrl);
+                      if (isYouTube) {
+                        let videoId = null;
+                        if (videoUrl.includes("/watch?v=")) {
+                          videoId = videoUrl
+                            .split("/watch?v=")[1]
+                            .split("&")[0];
+                        } else if (videoUrl.includes("/shorts/")) {
+                          videoId = videoUrl.split("/shorts/")[1].split("?")[0];
+                        } else if (videoUrl.includes("youtu.be/")) {
+                          videoId = videoUrl
+                            .split("youtu.be/")[1]
+                            .split("?")[0];
+                        }
+                        if (videoId) {
+                          return (
+                            <iframe
+                              width="100%"
+                              height="100%"
+                              src={`https://www.youtube.com/embed/${videoId}`}
+                              title={selectedMedia.title}
+                              frameBorder="0"
+                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                              allowFullScreen
+                              className="w-full h-full rounded-lg"
+                            ></iframe>
+                          );
+                        }
+                        return (
+                          <div className="text-white p-8">
+                            Unable to embed this YouTube video.
+                          </div>
+                        );
+                      } else if (isDirectVideo) {
+                        return (
+                          <video
+                            src={videoUrl}
+                            controls
+                            autoPlay
+                            className="w-full h-full rounded-lg"
+                          >
+                            Your browser does not support the video tag.
+                          </video>
+                        );
+                      } else {
+                        return (
+                          <div className="text-white p-8 text-center">
+                            <p>Cannot preview this video type.</p>
+                            <a
+                              href={videoUrl}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="underline text-primary"
+                            >
+                              Open Video in New Tab
+                            </a>
+                          </div>
+                        );
+                      }
+                    })()}
                   </div>
                 ) : (
                   <img
