@@ -144,7 +144,7 @@ const EventCenterWebsite = () => {
       type: "video",
       category: "weddings",
       title: "Wedding Ceremony Highlights",
-      url: "https://youtube.com/shorts/YK45ab7ioWI?si=RE27Y6Y8v4G0Zo7T",
+      url: "https://youtu.be/FVhMPKdAR8g",
     },
     {
       id: 4,
@@ -167,92 +167,86 @@ const EventCenterWebsite = () => {
       title: "Networking Cocktail Hour",
       url: "https://lh3.googleusercontent.com/pw/AP1GczNyx5sxZc69NMsbD_WtGy65CnioUbmyu1kGW8WpW0EtdUoB2gAkMPOhwBebroiCCG3yRrZrre-WnAC7plByV6f9nloI61BLsi7vmlCUBXaUjGn1ElOq2CQgxT4MOJRiUutOhLtPHwxUmT7BjEBIO2uJ=w871-h653-s-no-gm?authuser=0",
     },
+
     {
       id: 7,
-      type: "video",
-      category: "corporate",
-      title: "Product Launch Event",
-      url: "https://youtube.com/shorts/kfRnV42mLQM?si=BsEyL2dCrj8s-qgc",
-    },
-    {
-      id: 8,
       type: "image",
       category: "parties",
       title: "Birthday Celebration Setup",
       url: "https://lh3.googleusercontent.com/pw/AP1GczPUdoOTs5GYCNSTRMQ1gV3i_KtUexUFsWT1ThLON480I4gPbH1vdcTAqocxPK6hLXszIkjhNWFbO1lzfHGG2bH76HeNkrgieFrbFKP4LR0aondSJKWMZU5MJAbizmFeWP7pY_zdJpc9B7WiRzsTS3DH=w731-h975-s-no-gm?authuser=0",
     },
     {
-      id: 9,
+      id: 8,
       type: "image",
       category: "parties",
       title: "Intimate Anniversary Dinner",
       url: "https://lh3.googleusercontent.com/pw/AP1GczOaaW2UwTT1WDPVXOghbi4aNCc7nqaGxqnvzHQrKVbV3AljQIin9GTt64vkQaXQNfWclXlEw29ZBjndcBVFa9eBiuHhRJVp90x4hRvyusionInppczwpTDQSW2GgmAJEGqkv565066umTQWGZsFNZ39=w731-h975-s-no-gm?authuser=0",
     },
     {
-      id: 10,
+      id: 9,
       type: "image",
       category: "weddings",
       title: "Memorable Anniversary Party",
       url: "https://lh3.googleusercontent.com/pw/AP1GczP69ZzBN49kM3zmHTf_tnN7AZxBafYM57f5VtVV87tFaWkO48ufqqq19TIkGBXYMyO79u8GOWlJJtaLfLQZ7c-Pku1xy6CSrtk35A7RXpJsaK4bLdV6sWU-U1ClpfJp0HbEMyI663aebGHbVrXuP0Ie=w743-h991-s-no-gm?authuser=0",
     },
     {
-      id: 11,
+      id: 10,
       type: "video",
       category: "parties",
-      title: "Party Entertainment",
-      url: "https://youtube.com/shorts/NdR7T-y1vgI?si=LOYvfG8hNROZu0KK",
+      title: "Memorable Anniversary Party",
+      url: "https://youtube.com/shorts/F_5L7ynaSVM?feature=share",
     },
     {
-      id: 12,
+      id: 11,
       type: "image",
       category: "venue",
       title: "Main Hall Overview",
       url: "https://lh3.googleusercontent.com/pw/AP1GczNMWE3SIn0K1BCnVyLCSawWPL9lG9e5mwStTnzHXrrxaiwRSLoCvwdYkdrzWp6TM9bHELo2Zu5wiW0SfIdfQ5YQk6I8HkXFE_M1HJq-k3eYfHN5PvlB-UxrPsWGZmA1uQbHwssniF2STo8a2I2tXZnh=w731-h975-s-no-gm?authuser=0",
     },
     {
-      id: 13,
+      id: 12,
       type: "image",
       category: "venue",
       title: "Upper Floor Dining Area",
       url: "https://images.unsplash.com/photo-1555244162-803834f70033?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
     },
     {
-      id: 14,
+      id: 13,
       type: "image",
       category: "venue",
       title: "Bridal Preparation Room",
       url: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
     },
     {
-      id: 15,
+      id: 14,
       type: "video",
       category: "venue",
       title: "Virtual Venue Tour",
       url: "https://youtube.com/shorts/yM-crfxZYME?feature=share",
     },
     {
-      id: 16,
+      id: 15,
       type: "video",
       category: "venue",
       title: "Wedding Reception Highlights",
-      url: "https://youtube.com/shorts/rNbAs-mRvZo?si=4bgq3uWCYAWZb8ne",
+      url: "https://youtube.com/shorts/zT82oUc7sXw?feature=share",
     },
     {
-      id: 17,
+      id: 16,
       type: "video",
       category: "venue",
       title: "Wedding",
       url: "https://youtube.com/shorts/h5beRudjowA?feature=share",
     },
     {
-      id: 18,
+      id: 17,
       type: "video",
       category: "venue",
       title: "Grand Ball Room, Ground  ",
       url: "https://youtube.com/shorts/rzHc6zqnxBk?feature=share",
     },
     {
-      id: 19,
+      id: 18,
       type: "video",
       category: "venue",
       title: "Top Floor",
@@ -260,7 +254,7 @@ const EventCenterWebsite = () => {
     },
   ];
 
-  // Virtual Tour Data
+  // Virtual Tour Data - Enhanced with more images and locations
   const virtualTourStops = [
     {
       title: "Grand Entrance",
@@ -344,6 +338,90 @@ const EventCenterWebsite = () => {
           y: 60,
           label: "Changing Area",
           info: "Private dressing space",
+        },
+      ],
+    },
+    {
+      title: "Catering Kitchen",
+      description:
+        "State-of-the-art commercial kitchen where our expert chefs prepare exquisite cuisine for your event.",
+      image:
+        "https://lh3.googleusercontent.com/pw/AP1GczNMWE3SIn0K1BCnVyLCSawWPL9lG9e5mwStTnzHXrrxaiwRSLoCvwdYkdrzWp6TM9bHELo2Zu5wiW0SfIdfQ5YQk6I8HkXFE_M1HJq-k3eYfHN5PvlB-UxrPsWGZmA1uQbHwssniF2STo8a2I2tXZnh=w731-h975-s-no-gm?authuser=0",
+      hotspots: [
+        {
+          x: 40,
+          y: 50,
+          label: "Prep Stations",
+          info: "Multiple work areas for efficient service",
+        },
+        {
+          x: 70,
+          y: 30,
+          label: "Storage",
+          info: "Temperature controlled storage areas",
+        },
+      ],
+    },
+    {
+      title: "Outdoor Garden Area",
+      description:
+        "Beautiful outdoor space perfect for ceremonies, cocktails, or intimate gatherings surrounded by nature.",
+      image:
+        "https://lh3.googleusercontent.com/pw/AP1GczPUdoOTs5GYCNSTRMQ1gV3i_KtUexUFsWT1ThLON480I4gPbH1vdcTAqocxPK6hLXszIkjhNWFbO1lzfHGG2bH76HeNkrgieFrbFKP4LR0aondSJKWMZU5MJAbizmFeWP7pY_zdJpc9B7WiRzsTS3DH=w731-h975-s-no-gm?authuser=0",
+      hotspots: [
+        {
+          x: 50,
+          y: 40,
+          label: "Pergola",
+          info: "Covered area for outdoor events",
+        },
+        {
+          x: 25,
+          y: 70,
+          label: "Lounge Seating",
+          info: "Comfortable outdoor furniture",
+        },
+      ],
+    },
+    {
+      title: "VIP Lounge",
+      description:
+        "Exclusive relaxation area for VIP guests with premium amenities and privacy.",
+      image:
+        "https://lh3.googleusercontent.com/pw/AP1GczOaaW2UwTT1WDPVXOghbi4aNCc7nqaGxqnvzHQrKVbV3AljQIin9GTt64vkQaXQNfWclXlEw29ZBjndcBVFa9eBiuHhRJVp90x4hRvyusionInppczwpTDQSW2GgmAJEGqkv565066umTQWGZsFNZ39=w731-h975-s-no-gm?authuser=0",
+      hotspots: [
+        {
+          x: 30,
+          y: 50,
+          label: "Refreshment Bar",
+          info: "Complimentary beverages and snacks",
+        },
+        {
+          x: 70,
+          y: 60,
+          label: "Private Restroom",
+          info: "Dedicated facilities for VIP guests",
+        },
+      ],
+    },
+    {
+      title: "Grand Staircase",
+      description:
+        "Elegant architectural feature connecting both levels of our venue, perfect for grand entrances.",
+      image:
+        "https://lh3.googleusercontent.com/pw/AP1GczOlIh4Hn4pRax8hX7InwD9jwblvRViwSlzHH3-E56bIZjC6RRAoFHgH7EcGOTe7P1wD94WROWJLcF7_APg2d61rEGgXGwM4DOoUhGM5GVrMSmwC36OXbHwIm1E_oWJQl8Pf2BslVXQrGgMikILRPmEb=w731-h975-s-no-gm?authuser=0",
+      hotspots: [
+        {
+          x: 50,
+          y: 30,
+          label: "Ornate Railings",
+          info: "Handcrafted ironwork details",
+        },
+        {
+          x: 50,
+          y: 70,
+          label: "Landing Area",
+          info: "Perfect photo opportunity spot",
         },
       ],
     },
@@ -884,18 +962,8 @@ const EventCenterWebsite = () => {
               >
                 {media.type === "video" ? (
                   (() => {
-                    // Prefer explicit thumbnailUrl if present
-                    if (media.thumbnailUrl) {
-                      return (
-                        <img
-                          src={media.thumbnailUrl}
-                          alt={media.title}
-                          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                        />
-                      );
-                    }
                     // YouTube thumbnail
-                    const videoUrl = media.videoUrl || media.url;
+                    const videoUrl = media.url;
                     if (
                       videoUrl &&
                       (videoUrl.includes("youtube.com") ||
@@ -931,7 +999,6 @@ const EventCenterWebsite = () => {
                           muted
                           playsInline
                           preload="metadata"
-                          poster={media.poster || undefined}
                         />
                       );
                     }
@@ -1220,17 +1287,38 @@ const EventCenterWebsite = () => {
                   {virtualTourStops[virtualTourStep].description}
                 </p>
 
-                {/* Progress indicator */}
-                <div className="flex space-x-2 mt-6">
-                  {virtualTourStops.map((_, index) => (
-                    <button
-                      key={index}
-                      onClick={() => setVirtualTourStep(index)}
-                      className={`flex-1 h-2 rounded-full transition-colors ${
-                        index === virtualTourStep ? "bg-primary" : "bg-muted"
-                      }`}
-                    />
-                  ))}
+                {/* Progress indicator and thumbnails */}
+                <div className="mt-6">
+                  <div className="flex space-x-2 mb-4">
+                    {virtualTourStops.map((_, index) => (
+                      <button
+                        key={index}
+                        onClick={() => setVirtualTourStep(index)}
+                        className={`flex-1 h-2 rounded-full transition-colors ${
+                          index === virtualTourStep ? "bg-primary" : "bg-muted"
+                        }`}
+                      />
+                    ))}
+                  </div>
+                  <div className="flex overflow-x-auto gap-2 py-2 scrollbar-hide">
+                    {virtualTourStops.map((stop, index) => (
+                      <button
+                        key={index}
+                        onClick={() => setVirtualTourStep(index)}
+                        className={`flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden border-2 transition-all ${
+                          index === virtualTourStep
+                            ? "border-primary scale-105"
+                            : "border-transparent hover:border-muted-foreground"
+                        }`}
+                      >
+                        <img
+                          src={stop.image}
+                          alt={stop.title}
+                          className="w-full h-full object-cover"
+                        />
+                      </button>
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>
