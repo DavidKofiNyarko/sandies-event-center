@@ -22,6 +22,9 @@ import {
   Eye,
   ArrowRight,
   ArrowLeft,
+  Leaf,
+  RocketIcon,
+  Lightbulb,
 } from "lucide-react";
 import { SandiesLogo } from "@/components/SandiesLogo";
 import { url } from "inspector";
@@ -39,33 +42,56 @@ const EventCenterWebsite = () => {
     {
       icon: Heart,
       title: "Weddings",
-      description: "Create magical moments that last forever",
+      description:
+        "Step into forever with elegance. Our enchanting spaces set the stage for magical weddings filled with love, beauty, and memories that last a lifetime",
     },
     {
       icon: Sparkles,
       title: "Engagements",
-      description: "Celebrate your commitment in style",
+      description:
+        "Celebrate the beginning of your journey in style. From intimate moments to grand gestures, we make your engagement sparkle with romance",
     },
     {
       icon: Briefcase,
       title: "Corporate Events",
-      description: "Professional venues for business success",
+      description:
+        "Where business meets brilliance. Our professional venues provide the perfect backdrop for success — from board meetings to gala dinners.",
     },
     {
       icon: PartyPopper,
       title: "Private Parties",
-      description: "Unforgettable celebrations for every occasion",
+      description:
+        "Turn any occasion into an unforgettable celebration. Whether it’s a birthday, anniversary, or just because — we create moments worth cherishing.",
     },
     {
       icon: Users,
       title: "Meetings & Conferences",
-      description: "Productive spaces for meaningful connections",
+      description:
+        "Fuel productivity and inspiration. Our modern, well-equipped spaces foster meaningful discussions, powerful networking, and innovative ideas.",
     },
     {
       icon: Users,
       title: "Social Gatherings",
       description:
-        "Beautifully designed spaces that foster meaningful connections and unforgettable moments with friends, family, and colleagues.",
+        "Connect, share, and celebrate life. Our versatile venues are designed to bring friends, family, and colleagues together in warmth and style..",
+    },
+    {
+      icon: Leaf,
+      title: "Funeral Events",
+      description:
+        "A serene and dignified setting to honor loved ones. We provide a respectful space where memories are cherished and legacies celebrated.",
+    },
+    {
+      icon: RocketIcon,
+      title: "Product Lunch & Trade Shows",
+      description:
+        "Unveil your vision in grand style. With dynamic spaces tailored for innovation and impact, your launch or showcase will shine brighter than ever.",
+    },
+    {
+      icon: Lightbulb,
+      title: "Workshop and Seminars",
+      description:
+        "Inspire minds and spark ideas. Our learning-friendly environments create the perfect atmosphere for growth, collaboration, and knowledge sharing",
     },
   ];
 
@@ -98,7 +124,7 @@ const EventCenterWebsite = () => {
     {
       title: "Uninterrupted Excellence",
       description:
-        "State-of-the-art backup power systems guarantee your event flows seamlessly from start to finish, with professional-grade sound and lighting that never falters.",
+        "No pauses, no worries. With state-of-the-art backup power and professional-grade sound and lighting, your event flows seamlessly — from the first moment to the final toast",
     },
   ];
 
@@ -674,7 +700,7 @@ const EventCenterWebsite = () => {
       {/* Hero Section */}
       <section
         id="home"
-        className="pt-16 min-h-screen bg-gradient-elegant flex items-center"
+        className="pt-5 min-h-screen bg-gradient-elegant flex items-center"
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -780,11 +806,37 @@ const EventCenterWebsite = () => {
               </div>
             </div>
           </div>
+          <div className="relative bg-gradient-to-r from-black via-neutral-700 to-black text-center py-16 px-6 rounded-2xl shadow-2xl border border-yellow-600 mt-7">
+            {/* Decorative gold shimmer overlay */}
+            <div className="absolute inset-0 bg-gradient-to-r from-yellow-600/10 via-transparent to-yellow-600/10 animate-pulse rounded-2xl"></div>
+
+            <div className="relative z-10 max-w-3xl mx-auto">
+              <p className="text-2xl md:text-3xl font-semibold text-white leading-relaxed mb-8">
+                Your special moments deserve nothing less than extraordinary —{" "}
+                <span className="text-yellow-500">
+                  let’s make it unforgettable.
+                </span>
+              </p>
+
+              <a className="inline-block bg-yellow-500 hover:bg-yellow-400 text-black font-semibold text-lg px-8 py-4 rounded-xl shadow-lg transition transform hover:scale-105 hover:shadow-yellow-500/40 scroll-smooth">
+                <button
+                  onClick={(e) => {
+                    e.preventDefault();
+                    document
+                      .getElementById("contact")
+                      .scrollIntoView({ behavior: "smooth" });
+                  }}
+                >
+                  Book Now
+                </button>
+              </a>
+            </div>
+          </div>
         </div>
       </section>
 
       {/* Events Section */}
-      <section id="events" className="py-20 bg-background">
+      <section id="events" className="py-15 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-foreground mb-4">
@@ -843,7 +895,7 @@ const EventCenterWebsite = () => {
                 <h3 className="text-3xl font-bold text-card-foreground mb-4">
                   Upper Level
                 </h3>
-                <div className="text-6xl font-bold bg-gradient-gold bg-clip-text text-transparent mb-2">
+                <div className="text-6xl font-bold bg-gradient-sunset bg-clip-text text-transparent mb-2">
                   200+
                 </div>
                 <p className="text-muted-foreground text-lg mb-6">Guests</p>
@@ -857,8 +909,8 @@ const EventCenterWebsite = () => {
 
             <div className="bg-card rounded-3xl p-8 shadow-elegant hover:shadow-glow transition-shadow">
               <div className="text-center">
-                <div className="w-20 h-20 bg-secondary rounded-full flex items-center justify-center mx-auto mb-6">
-                  <span className="text-secondary-foreground font-bold text-2xl">
+                <div className="w-20 h-20 bg-gradient-gold rounded-full flex items-center justify-center mx-auto mb-6">
+                  <span className="text-secondary-foreground text-black font-bold text-2xl">
                     GF
                   </span>
                 </div>
@@ -880,13 +932,13 @@ const EventCenterWebsite = () => {
       </section>
 
       {/* Facilities Section */}
-      <section id="facilities" className="py-20 bg-background">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
+      <section id="facilities" className="py-20 bg-background ">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-gradient-sunset pb-10 rounded-3xl">
+          <div className="text-center mb-16 ">
             <h2 className="text-4xl font-bold text-foreground mb-4">
               World-Class Facilities
             </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            <p className=" text-white max-w-3xl text-2xl shadow-glow font-bold mx-auto">
               Every detail carefully crafted to ensure your event runs
               seamlessly from start to finish
             </p>
@@ -1160,7 +1212,7 @@ const EventCenterWebsite = () => {
             </div>
 
             <div className="bg-card/10 backdrop-blur-md rounded-3xl p-8">
-              <h3 className="text-2xl font-bold mb-6">Send us a Message</h3>
+              <h3 className="text-2xl font-bold mb-6">Book Your Event Now</h3>
               <form className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-4">
                   <input
@@ -1188,7 +1240,7 @@ const EventCenterWebsite = () => {
                   type="submit"
                   className="w-full bg-gradient-gold text-primary-foreground px-8 py-4 rounded-lg font-semibold hover:shadow-glow transform hover:scale-105 transition-all"
                 >
-                  Send Message
+                  Book Now
                 </button>
               </form>
             </div>
