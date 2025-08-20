@@ -514,8 +514,8 @@ const EventCenterWebsite = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-14">
             <a href="/">
-              <div className="flex items-center mt-10">
-                <SandiesLogo size="md" className="w-[229px]" />
+              <div className="flex items-center">
+                <SandiesLogo size="sm" className="w-32 sm:w-40 lg:w-[229px]" />
               </div>
             </a>
 
@@ -589,8 +589,8 @@ const EventCenterWebsite = () => {
             </div>
 
             <button
-              className="md:hidden"
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className="md:hidden z-50"
+              onClick={() => setIsMenuOpen((prev) => !prev)} // Use functional update for reliability
             >
               {isMenuOpen ? (
                 <X className="h-6 w-6" />
@@ -602,11 +602,11 @@ const EventCenterWebsite = () => {
         </div>
 
         {isMenuOpen && (
-          <div className="md:hidden bg-background border-t border-border">
-            <div className="px-2 pt-2 pb-3 space-y-1">
+          <div className="md:hidden fixed inset-x-0 top-14 bg-background border-t border-border z-40">
+            <div className="px-4 py-3 space-y-2">
               <a
                 href="#home"
-                className="block px-3 py-2 text-foreground cursor-pointer"
+                className="block px-4 py-2 text-foreground hover:bg-muted rounded-lg"
                 onClick={(e) => {
                   e.preventDefault();
                   document
@@ -619,7 +619,7 @@ const EventCenterWebsite = () => {
               </a>
               <a
                 href="#events"
-                className="block px-3 py-2 text-foreground cursor-pointer"
+                className="block px-4 py-2 text-foreground hover:bg-muted rounded-lg"
                 onClick={(e) => {
                   e.preventDefault();
                   document
@@ -632,7 +632,7 @@ const EventCenterWebsite = () => {
               </a>
               <a
                 href="#facilities"
-                className="block px-3 py-2 text-foreground cursor-pointer"
+                className="block px-4 py-2 text-foreground hover:bg-muted rounded-lg"
                 onClick={(e) => {
                   e.preventDefault();
                   document
@@ -645,7 +645,7 @@ const EventCenterWebsite = () => {
               </a>
               <a
                 href="#gallery"
-                className="block px-3 py-2 text-foreground cursor-pointer"
+                className="block px-4 py-2 text-foreground hover:bg-muted rounded-lg"
                 onClick={(e) => {
                   e.preventDefault();
                   document
@@ -658,7 +658,7 @@ const EventCenterWebsite = () => {
               </a>
               <a
                 href="#contact"
-                className="block px-3 py-2 text-foreground cursor-pointer"
+                className="block px-4 py-2 text-foreground hover:bg-muted rounded-lg"
                 onClick={(e) => {
                   e.preventDefault();
                   document
@@ -674,7 +674,7 @@ const EventCenterWebsite = () => {
                   setIsFormModalOpen(true);
                   setIsMenuOpen(false);
                 }}
-                className="w-full text-left bg-gradient-gold text-primary-foreground px-3 py-2 rounded-lg mt-2 font-semibold"
+                className="w-full text-left bg-gradient-gold text-primary-foreground px-4 py-2 rounded-lg font-semibold hover:shadow-glow"
               >
                 Book Now
               </button>
