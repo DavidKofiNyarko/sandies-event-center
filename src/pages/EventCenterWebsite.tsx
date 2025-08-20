@@ -27,7 +27,6 @@ import {
   Lightbulb,
 } from "lucide-react";
 import { SandiesLogo } from "@/components/SandiesLogo";
-import { url } from "inspector";
 
 const EventCenterWebsite = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -37,6 +36,7 @@ const EventCenterWebsite = () => {
   const [isVirtualTourActive, setIsVirtualTourActive] = useState(false);
   const [virtualTourStep, setVirtualTourStep] = useState(0);
   const [isExploring, setIsExploring] = useState(false);
+  const [isFormModalOpen, setIsFormModalOpen] = useState(false);
 
   const events = [
     {
@@ -149,7 +149,6 @@ const EventCenterWebsite = () => {
     },
   ];
 
-  // Gallery media data
   const galleryMedia = [
     {
       id: 1,
@@ -193,7 +192,6 @@ const EventCenterWebsite = () => {
       title: "Networking Cocktail Hour",
       url: "https://lh3.googleusercontent.com/pw/AP1GczNyx5sxZc69NMsbD_WtGy65CnioUbmyu1kGW8WpW0EtdUoB2gAkMPOhwBebroiCCG3yRrZrre-WnAC7plByV6f9nloI61BLsi7vmlCUBXaUjGn1ElOq2CQgxT4MOJRiUutOhLtPHwxUmT7BjEBIO2uJ=w871-h653-s-no-gm?authuser=0",
     },
-
     {
       id: 7,
       type: "image",
@@ -280,7 +278,6 @@ const EventCenterWebsite = () => {
     },
   ];
 
-  // Virtual Tour Data - Enhanced with more images and locations
   const virtualTourStops = [
     {
       title: "Grand Entrance",
@@ -515,14 +512,13 @@ const EventCenterWebsite = () => {
       {/* Navigation */}
       <nav className="fixed top-0 w-full bg-background/95 backdrop-blur-md shadow-elegant z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-20">
+          <div className="flex justify-between items-center h-14">
             <a href="/">
-              <div className="flex items-center mt-4">
+              <div className="flex items-center mt-10">
                 <SandiesLogo size="md" className="w-[229px]" />
               </div>
             </a>
 
-            {/* Desktop Menu */}
             <div className="hidden md:flex items-center space-x-8">
               <a
                 href="#home"
@@ -585,19 +581,13 @@ const EventCenterWebsite = () => {
                 Contact
               </a>
               <button
-                onClick={(e) => {
-                  e.preventDefault();
-                  document
-                    .getElementById("contact")
-                    .scrollIntoView({ behavior: "smooth" });
-                }}
+                onClick={() => setIsFormModalOpen(true)}
                 className="bg-gradient-gold text-primary-foreground px-6 py-2 rounded-full hover:shadow-glow transform hover:scale-105 transition-all font-semibold"
               >
                 Book Now
               </button>
             </div>
 
-            {/* Mobile Menu Button */}
             <button
               className="md:hidden"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -611,7 +601,6 @@ const EventCenterWebsite = () => {
           </div>
         </div>
 
-        {/* Mobile Menu */}
         {isMenuOpen && (
           <div className="md:hidden bg-background border-t border-border">
             <div className="px-2 pt-2 pb-3 space-y-1">
@@ -681,11 +670,8 @@ const EventCenterWebsite = () => {
                 Contact
               </a>
               <button
-                onClick={(e) => {
-                  e.preventDefault();
-                  document
-                    .getElementById("contact")
-                    .scrollIntoView({ behavior: "smooth" });
+                onClick={() => {
+                  setIsFormModalOpen(true);
                   setIsMenuOpen(false);
                 }}
                 className="w-full text-left bg-gradient-gold text-primary-foreground px-3 py-2 rounded-lg mt-2 font-semibold"
@@ -697,7 +683,6 @@ const EventCenterWebsite = () => {
         )}
       </nav>
 
-      {/* Hero Section */}
       <section
         id="home"
         className="pt-5 min-h-screen bg-gradient-elegant flex items-center"
@@ -743,7 +728,6 @@ const EventCenterWebsite = () => {
                     </span>
                   </button>
 
-                  {/* Explore Dropdown */}
                   <div className="absolute top-full left-0 mt-2 w-80 bg-card rounded-2xl shadow-elegant border border-border opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-10">
                     <div className="p-6">
                       <h3 className="text-lg font-bold text-card-foreground mb-4">
@@ -807,7 +791,6 @@ const EventCenterWebsite = () => {
             </div>
           </div>
           <div className="relative bg-gradient-to-r from-black via-neutral-700 to-black text-center py-16 px-6 rounded-2xl shadow-2xl border border-yellow-600 mt-7">
-            {/* Decorative gold shimmer overlay */}
             <div className="absolute inset-0 bg-gradient-to-r from-yellow-600/10 via-transparent to-yellow-600/10 animate-pulse rounded-2xl"></div>
 
             <div className="relative z-10 max-w-3xl mx-auto">
@@ -818,24 +801,17 @@ const EventCenterWebsite = () => {
                 </span>
               </p>
 
-              <a className="inline-block bg-yellow-500 hover:bg-yellow-400 text-black font-semibold text-lg px-8 py-4 rounded-xl shadow-lg transition transform hover:scale-105 hover:shadow-yellow-500/40 scroll-smooth">
-                <button
-                  onClick={(e) => {
-                    e.preventDefault();
-                    document
-                      .getElementById("contact")
-                      .scrollIntoView({ behavior: "smooth" });
-                  }}
-                >
-                  Book Now
-                </button>
-              </a>
+              <button
+                onClick={() => setIsFormModalOpen(true)}
+                className="inline-block bg-yellow-500 hover:bg-yellow-400 text-black font-semibold text-lg px-8 py-4 rounded-xl shadow-lg transition transform hover:scale-105 hover:shadow-yellow-500/40"
+              >
+                Book Now
+              </button>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Events Section */}
       <section id="events" className="py-15 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
@@ -872,7 +848,6 @@ const EventCenterWebsite = () => {
         </div>
       </section>
 
-      {/* Capacity Section */}
       <section className="py-20 bg-gradient-elegant">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
@@ -931,14 +906,13 @@ const EventCenterWebsite = () => {
         </div>
       </section>
 
-      {/* Facilities Section */}
       <section id="facilities" className="py-20 bg-background ">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-gradient-sunset pb-10 rounded-3xl">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8  pb-10 rounded-3xl bg-gradient-to-r from-yellow-200 via-orange-200 to-red-200">
           <div className="text-center mb-16 ">
             <h2 className="text-4xl font-bold text-foreground mb-4">
               World-Class Facilities
             </h2>
-            <p className=" text-white max-w-3xl text-2xl shadow-glow font-bold mx-auto">
+            <p className=" max-w-3xl text-2xl shadow-glow font-bold mx-auto">
               Every detail carefully crafted to ensure your event runs
               seamlessly from start to finish
             </p>
@@ -967,7 +941,6 @@ const EventCenterWebsite = () => {
         </div>
       </section>
 
-      {/* Gallery Section */}
       <section id="gallery" className="py-20 bg-gradient-elegant">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
@@ -980,7 +953,6 @@ const EventCenterWebsite = () => {
             </p>
           </div>
 
-          {/* Gallery Filter Tabs */}
           <div className="flex flex-wrap justify-center gap-4 mb-12">
             {[
               { key: "all", label: "All Media", icon: Camera },
@@ -1004,7 +976,6 @@ const EventCenterWebsite = () => {
             ))}
           </div>
 
-          {/* Gallery Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {getFilteredMedia().map((media) => (
               <div
@@ -1014,7 +985,6 @@ const EventCenterWebsite = () => {
               >
                 {media.type === "video" ? (
                   (() => {
-                    // YouTube thumbnail
                     const videoUrl = media.url;
                     if (
                       videoUrl &&
@@ -1039,7 +1009,6 @@ const EventCenterWebsite = () => {
                         );
                       }
                     }
-                    // Direct video file: show <video> preview
                     if (
                       videoUrl &&
                       /\.(mp4|webm|ogg|mov|m4v)(\?.*)?$/i.test(videoUrl)
@@ -1054,7 +1023,6 @@ const EventCenterWebsite = () => {
                         />
                       );
                     }
-                    // Fallback: show a dark background with play icon
                     return (
                       <div className="w-full h-full bg-black flex items-center justify-center">
                         <Play className="h-12 w-12 text-primary" />
@@ -1088,7 +1056,6 @@ const EventCenterWebsite = () => {
         </div>
       </section>
 
-      {/* Testimonials Section */}
       <section className="py-20 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
@@ -1127,7 +1094,6 @@ const EventCenterWebsite = () => {
               </div>
             </div>
 
-            {/* Testimonial indicators */}
             <div className="flex justify-center mt-8 space-x-2">
               {testimonials.map((_, index) => (
                 <button
@@ -1145,135 +1111,112 @@ const EventCenterWebsite = () => {
         </div>
       </section>
 
-      {/* Contact Section */}
+      {/* Footer */}
       <section
         id="contact"
-        className="py-20 bg-secondary text-secondary-foreground"
+        className="py-8 bg-gradient-to-r from-black via-neutral-700 to-black text-center px-6 rounded-2xl shadow-2xl border border-yellow-600 text-secondary-foreground"
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">
+          <div className="text-center mb-2">
+            <h2 className="text-2xl font-bold mb-2 sm:text-3xl">
               Ready to Plan Your Event?
             </h2>
-            <p className="text-xl text-secondary-foreground/80">
+            <p className="text-base text-secondary-foreground/80 sm:text-lg">
               Let's make your dream event a reality
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12">
-            <div>
-              <h3 className="text-2xl font-bold mb-8">Get in Touch</h3>
-              <div className="space-y-6">
-                <div className="flex items-center space-x-4">
-                  <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center">
-                    <MapPin className="h-6 w-6 text-primary-foreground" />
+          <div className="grid gap-6 md:grid-cols-1 lg:grid-cols-3 lg:grid-rows-[auto_1fr_auto]">
+            <div className="lg:col-span-1 lg:row-span-1">
+              <h3 className="text-lg font-bold mb-4 text-left sm:text-xl">
+                Get in Touch
+              </h3>
+              <div className="flex flex-col gap-2">
+                <div className="flex items-center space-x-3">
+                  <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
+                    <MapPin className="h-4 w-4 text-primary-foreground" />
                   </div>
                   <div>
-                    <p className="font-semibold">Location</p>
-                    <p className="text-secondary-foreground/80">
+                    <p className="font-semibold text-justify text-sm sm:text-base">
+                      Location
+                    </p>
+                    <p className="text-secondary-foreground/80 text-sm sm:text-base">
                       Kutunse satellite, behind DVLA
                     </p>
                   </div>
                 </div>
-                <div className="flex items-center space-x-4">
-                  <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center">
-                    <Phone className="h-6 w-6 text-primary-foreground" />
+                <div className="flex items-center space-x-3">
+                  <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
+                    <Phone className="h-4 w-4 text-primary-foreground" />
                   </div>
                   <div>
-                    <p className="font-semibold">Phone</p>
-                    <p className="text-secondary-foreground/80">
+                    <p className="font-semibold text-sm sm:text-base text-justify">
+                      Phone
+                    </p>
+                    <p className="text-secondary-foreground/80 text-sm sm:text-base">
                       +233-206273120 / +233-240468404
                     </p>
                   </div>
                 </div>
-                <div className="flex items-center space-x-4">
-                  <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center">
-                    <Mail className="h-6 w-6 text-primary-foreground" />
+                <div className="flex items-center space-x-3">
+                  <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
+                    <Mail className="h-4 w-4 text-primary-foreground" />
                   </div>
                   <div>
-                    <p className="font-semibold">Email</p>
-                    <p className="text-secondary-foreground/80">
+                    <p className="font-semibold text-sm sm:text-base text-justify">
+                      Email
+                    </p>
+                    <p className="text-secondary-foreground/80 text-sm sm:text-base">
                       sandiesastoria@gmail.com
                     </p>
                   </div>
                 </div>
-                <div className="flex items-center space-x-4">
-                  <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center">
-                    <Calendar className="h-6 w-6 text-primary-foreground" />
+                <div className="flex items-center space-x-3">
+                  <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
+                    <Calendar className="h-4 w-4 text-primary-foreground" />
                   </div>
                   <div>
-                    <p className="font-semibold">Hours</p>
-                    <p className="text-secondary-foreground/80">
+                    <p className="font-semibold text-sm sm:text-base text-justify">
+                      Hours
+                    </p>
+                    <p className="text-secondary-foreground/80 text-sm sm:text-base">
                       Mon-Sun: 9AM - 5PM
                     </p>
                   </div>
                 </div>
               </div>
             </div>
-
-            <div className="bg-card/10 backdrop-blur-md rounded-3xl p-8">
-              <h3 className="text-2xl font-bold mb-6">Book Your Event Now</h3>
-              <form className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-4">
-                  <input
-                    type="text"
-                    placeholder="Your Name"
-                    className="w-full px-4 py-3 bg-card/20 border border-card/30 rounded-lg text-secondary-foreground placeholder-secondary-foreground/60 focus:outline-none focus:ring-2 focus:ring-primary"
-                  />
-                  <input
-                    type="email"
-                    placeholder="Your Email"
-                    className="w-full px-4 py-3 bg-card/20 border border-card/30 rounded-lg text-secondary-foreground placeholder-secondary-foreground/60 focus:outline-none focus:ring-2 focus:ring-primary"
-                  />
-                </div>
-                <input
-                  type="text"
-                  placeholder="Event Type"
-                  className="w-full px-4 py-3 bg-card/20 border border-card/30 rounded-lg text-secondary-foreground placeholder-secondary-foreground/60 focus:outline-none focus:ring-2 focus:ring-primary"
-                />
-                <textarea
-                  rows={4}
-                  placeholder="Tell us about your event..."
-                  className="w-full px-4 py-3 bg-card/20 border border-card/30 rounded-lg text-secondary-foreground placeholder-secondary-foreground/60 focus:outline-none focus:ring-2 focus:ring-primary"
-                ></textarea>
-                <button
-                  type="submit"
-                  className="w-full bg-gradient-gold text-primary-foreground px-8 py-4 rounded-lg font-semibold hover:shadow-glow transform hover:scale-105 transition-all"
-                >
-                  Book Now
-                </button>
-              </form>
+            <div className="w-full h-80 sm:h-96 md:h-[20rem] lg:h-[18rem] lg:w-[45rem] lg:col-span-2 lg:row-span-2">
+              <iframe
+                className="w-full h-full rounded-lg"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d79145.5044359981!2d-0.2918029!3d5.7590444!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf0bd2959b78e9%3A0xad22e55042d3ac60!2sSandie%E2%80%99s%20Astoria%20Banquet!5e1!3m2!1sen!2sgh!4v1755651431730!5m2!1sen!2sgh"
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+            <div className="lg:col-span-3 lg:row-span-1">
+              <div className="flex flex-row items-center justify-between -my-7 ">
+                <a href="/">
+                  <SandiesLogo size="md" className="text-primary sm:size-md" />
+                </a>
+                <p className="text-secondary-foreground/80 text-sm sm:text-base ">
+                  Creating unforgettable moments since 2020
+                </p>
+              </div>
+              <div className="border-t  border-secondary-foreground/20 pt-0 text-center">
+                <p className="text-secondary-foreground/60 text-sm sm:text-base">
+                  &copy; 2025 Sandies Event Center. All rights reserved.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </section>
-
       {/* Footer */}
-      <section className="bg-foreground   bg-slate-800 text-background py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <div className="mb-4">
-              <a href="/">
-                <div className="mb-2 bg-slate-800 ">
-                  <SandiesLogo size="md" className="text-primary " />
-                </div>
-              </a>
-            </div>
-            <p className="text-background/80 mb-8">
-              Creating unforgettable moments since 2020
-            </p>
-            <div className="border-t border-background/20 pt-8">
-              <p className="text-background/60">
-                &copy; 2024 Sandies Event Center. All rights reserved.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      {/* Virtual Tour Modal */}
       {isVirtualTourActive && (
-        <div className="fixed inset-0 bg-secondary/90 z-50 flex items-center justify-center p-4">
+        <div className="fixed inset-0 bg-secondary/90 z-50 flex items-center  justify-center p-4">
           <div className="bg-card rounded-3xl max-w-6xl w-full max-h-[90vh] overflow-hidden">
             <div className="relative">
               <button
@@ -1290,7 +1233,6 @@ const EventCenterWebsite = () => {
                   className="w-full h-full object-cover"
                 />
 
-                {/* Hotspots */}
                 {virtualTourStops[virtualTourStep].hotspots.map(
                   (hotspot, index) => (
                     <div
@@ -1311,7 +1253,6 @@ const EventCenterWebsite = () => {
                   )
                 )}
 
-                {/* Navigation buttons */}
                 <button
                   onClick={prevTourStop}
                   className="absolute left-4 top-1/2 transform -translate-y-1/2 w-12 h-12 bg-card/90 rounded-full flex items-center justify-center hover:bg-card transition-colors"
@@ -1339,7 +1280,6 @@ const EventCenterWebsite = () => {
                   {virtualTourStops[virtualTourStep].description}
                 </p>
 
-                {/* Progress indicator and thumbnails */}
                 <div className="mt-6">
                   <div className="flex space-x-2 mb-4">
                     {virtualTourStops.map((_, index) => (
@@ -1378,7 +1318,6 @@ const EventCenterWebsite = () => {
         </div>
       )}
 
-      {/* Media Modal */}
       {selectedMedia && (
         <div className="fixed inset-0 bg-secondary/90 z-50 flex items-center justify-center p-4">
           <div className="relative max-w-4xl w-full">
@@ -1392,77 +1331,71 @@ const EventCenterWebsite = () => {
             <div className="bg-card rounded-2xl overflow-hidden">
               <div className="aspect-video">
                 {selectedMedia.type === "video" ? (
-                  <div className="w-full h-full flex items-center justify-center bg-black">
-                    {(() => {
-                      const videoUrl =
-                        selectedMedia.videoUrl || selectedMedia.url;
-                      const isYouTube =
-                        videoUrl &&
-                        (videoUrl.includes("youtube.com") ||
-                          videoUrl.includes("youtu.be"));
-                      const isDirectVideo =
-                        videoUrl &&
-                        /\.(mp4|webm|ogg|mov|m4v)(\?.*)?$/i.test(videoUrl);
-                      if (isYouTube) {
-                        let videoId = null;
-                        if (videoUrl.includes("/watch?v=")) {
-                          videoId = videoUrl
-                            .split("/watch?v=")[1]
-                            .split("&")[0];
-                        } else if (videoUrl.includes("/shorts/")) {
-                          videoId = videoUrl.split("/shorts/")[1].split("?")[0];
-                        } else if (videoUrl.includes("youtu.be/")) {
-                          videoId = videoUrl
-                            .split("youtu.be/")[1]
-                            .split("?")[0];
-                        }
-                        if (videoId) {
-                          return (
-                            <iframe
-                              width="100%"
-                              height="100%"
-                              src={`https://www.youtube.com/embed/${videoId}`}
-                              title={selectedMedia.title}
-                              frameBorder="0"
-                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                              allowFullScreen
-                              className="w-full h-full rounded-lg"
-                            ></iframe>
-                          );
-                        }
+                  (() => {
+                    const videoUrl =
+                      selectedMedia.videoUrl || selectedMedia.url;
+                    const isYouTube =
+                      videoUrl &&
+                      (videoUrl.includes("youtube.com") ||
+                        videoUrl.includes("youtu.be"));
+                    const isDirectVideo =
+                      videoUrl &&
+                      /\.(mp4|webm|ogg|mov|m4v)(\?.*)?$/i.test(videoUrl);
+                    if (isYouTube) {
+                      let videoId = null;
+                      if (videoUrl.includes("/watch?v=")) {
+                        videoId = videoUrl.split("/watch?v=")[1].split("&")[0];
+                      } else if (videoUrl.includes("/shorts/")) {
+                        videoId = videoUrl.split("/shorts/")[1].split("?")[0];
+                      } else if (videoUrl.includes("youtu.be/")) {
+                        videoId = videoUrl.split("ytu.be/")[1].split("?")[0];
+                      }
+                      if (videoId) {
                         return (
-                          <div className="text-white p-8">
-                            Unable to embed this YouTube video.
-                          </div>
-                        );
-                      } else if (isDirectVideo) {
-                        return (
-                          <video
-                            src={videoUrl}
-                            controls
-                            autoPlay
+                          <iframe
+                            width="100%"
+                            height="100%"
+                            src={`https://www.youtube.com/embed/${videoId}`}
+                            title={selectedMedia.title}
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
                             className="w-full h-full rounded-lg"
-                          >
-                            Your browser does not support the video tag.
-                          </video>
-                        );
-                      } else {
-                        return (
-                          <div className="text-white p-8 text-center">
-                            <p>Cannot preview this video type.</p>
-                            <a
-                              href={videoUrl}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="underline text-primary"
-                            >
-                              Open Video in New Tab
-                            </a>
-                          </div>
+                          ></iframe>
                         );
                       }
-                    })()}
-                  </div>
+                      return (
+                        <div className="text-white p-8">
+                          Unable to embed this YouTube video.
+                        </div>
+                      );
+                    } else if (isDirectVideo) {
+                      return (
+                        <video
+                          src={videoUrl}
+                          controls
+                          autoPlay
+                          className="w-full h-full rounded-lg"
+                        >
+                          Your browser does not support the video tag.
+                        </video>
+                      );
+                    } else {
+                      return (
+                        <div className="text-white p-8 text-center">
+                          <p>Cannot preview this video type.</p>
+                          <a
+                            href={videoUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="underline text-primary"
+                          >
+                            Open Video in New Tab
+                          </a>
+                        </div>
+                      );
+                    }
+                  })()
                 ) : (
                   <img
                     src={selectedMedia.url}
@@ -1479,6 +1412,53 @@ const EventCenterWebsite = () => {
                   {selectedMedia.category} Event
                 </p>
               </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {isFormModalOpen && (
+        <div className="fixed inset-0 bg-secondary/90 z-50 flex items-center justify-center p-4">
+          <div className="relative max-w-lg w-full bg-card/10 backdrop-blur-md rounded-3xl p-8">
+            <button
+              onClick={() => setIsFormModalOpen(false)}
+              className="absolute top-4 right-4 text-secondary-foreground hover:text-secondary-foreground/70 transition-colors"
+            >
+              <X className="h-6 w-6" />
+            </button>
+            <h3 className="text-2xl font-bold mb-6 text-secondary-foreground">
+              Book Your Event Now
+            </h3>
+            <div className="space-y-6">
+              <div className="grid md:grid-cols-2 gap-4">
+                <input
+                  type="text"
+                  placeholder="Your Name"
+                  className="w-full px-4 py-3 bg-card/20 border border-card/30 rounded-lg text-secondary-foreground placeholder-secondary-foreground/60 focus:outline-none focus:ring-2 focus:ring-primary"
+                />
+                <input
+                  type="email"
+                  placeholder="Your Email"
+                  className="w-full px-4 py-3 bg-card/20 border border-card/30 rounded-lg text-secondary-foreground placeholder-secondary-foreground/60 focus:outline-none focus:ring-2 focus:ring-primary"
+                />
+              </div>
+              <input
+                type="text"
+                placeholder="Event Type"
+                className="w-full px-4 py-3 bg-card/20 border border-card/30 rounded-lg text-secondary-foreground placeholder-secondary-foreground/60 focus:outline-none focus:ring-2 focus:ring-primary"
+              />
+              <textarea
+                rows={4}
+                placeholder="Tell us about your event..."
+                className="w-full px-4 py-3 bg-card/20 border border-card/30 rounded-lg text-secondary-foreground placeholder-secondary-foreground/60 focus:outline-none focus:ring-2 focus:ring-primary"
+              ></textarea>
+              <button
+                type="button"
+                className="w-full bg-gradient-gold text-primary-foreground px-8 py-4 rounded-lg font-semibold hover:shadow-glow transform hover:scale-105 transition-all"
+                onClick={() => setIsFormModalOpen(false)}
+              >
+                Book Now
+              </button>
             </div>
           </div>
         </div>
