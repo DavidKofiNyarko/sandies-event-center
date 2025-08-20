@@ -515,7 +515,10 @@ const EventCenterWebsite = () => {
           <div className="flex justify-between items-center h-14">
             <a href="/">
               <div className="flex items-center">
-                <SandiesLogo size="sm" className="w-32 sm:w-40 lg:w-[229px]" />
+                <SandiesLogo
+                  size="md"
+                  className="w-32 sm:w-[220px] sm:mt-9 lg:w-[229px] lg:mt-10 md:mt-9 md:w-[220px]"
+                />
               </div>
             </a>
 
@@ -1196,11 +1199,14 @@ const EventCenterWebsite = () => {
               ></iframe>
             </div>
             <div className="lg:col-span-3 lg:row-span-1">
-              <div className="flex flex-row items-center justify-between -my-7 ">
+              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
                 <a href="/">
-                  <SandiesLogo size="md" className="text-primary sm:size-md" />
+                  <SandiesLogo
+                    size="md"
+                    className="text-primary w-32 sm:w-40 lg:w-[229px]"
+                  />
                 </a>
-                <p className="text-secondary-foreground/80 text-sm sm:text-base ">
+                <p className="text-secondary-foreground/80 text-sm sm:text-base">
                   Creating unforgettable moments since 2020
                 </p>
               </div>
