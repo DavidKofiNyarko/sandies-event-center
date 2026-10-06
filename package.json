@@ -1,8 +1,23 @@
 {
-  "name": "vite_react_shadcn_ts",
+  "name": "sandies-event-center",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
+  "description": "Marketing website for Sandies Event Center, a premier event venue in Accra, Ghana.",
+  "author": "David Nyarko",
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DavidKofiNyarko/sandies-event-center.git"
+  },
+  "keywords": [
+    "event-center",
+    "venue",
+    "events",
+    "weddings",
+    "accra",
+    "ghana"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "vite build",
